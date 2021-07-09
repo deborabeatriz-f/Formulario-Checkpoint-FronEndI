@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alma Botânica</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/color/48/000000/potted-plant--v1.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <img src="./img/2.jpg" alt="plantas" />
+        <p id="alma">Alma Botânica</p>
+
+        <form action="#" method="post">
+          <fieldset class="itemFormulario">
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+            <label for="telefone">Telefone:</label>
+            <input type="number" name="telefone" id="telefone" />
+          </fieldset>
+          <fieldset class="itemFormulario">
+            <legend>Endereço</legend>
+            <textarea
+              name="endereco"
+              id="endereco"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </fieldset>
+          <fieldset class="itemFormulario">
+            <legend>Platas</legend>
+            <select name="plantas" id="plantas">
+              <option value="">Escolha sua planta</option>
+              <optgroup label="Meia Sombra">
+                <option value="jiboia">Jibóia</option>
+                <option value="maranta">Maranta</option>
+                <option value="filodendro">Filodendro</option>
+                <option value="peperomia">Peperômia</option>
+              </optgroup>
+              <optgroup label="Sol Pleno">
+                <option value="hera">Hera</option>
+                <option value="murta">Murta</option>
+                <option value="begonia">Begônia</option>
+                <option value="cactos">Cactos</option>
+              </optgroup>
+            </select>
+          </fieldset>
+          <fieldset class="itemFormulario">
+            <legend>Extras Opcionais</legend>
+            <input type="checkbox" name="cachepo" id="cachepo" />
+            <label for="cachepo">Cachepô</label>
+            <input type="checkbox" name="substrato" id="substrato" />
+            <label for="substrato">Substrato</label>
+            <input type="checkbox" name="adubo" id="adubo" />
+            <label for="adubo">Adubo</label>
+          </fieldset>
+          <fieldset class="itemFormulario">
+            <legend>Método de Pagamento</legend>
+            <label for="credito">Crédito</label>
+            <input
+              type="radio"
+              name="pagamento"
+              id="credito"
+              value="credito"
+              checked
+            />
+            <label for="debito">Débito</label>
+            <input
+              type="radio"
+              name="pagamento"
+              id="debito"
+              value="debito"
+              checked
+            />
+            <label for="pix">Pix</label>
+            <input type="radio" name="pagamento" id="pix" value="pix" checked />
+          </fieldset>
+        </form>
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+      </div>
+    </main>
+  </body>
+</html>
