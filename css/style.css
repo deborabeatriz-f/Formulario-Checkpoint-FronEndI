@@ -80,6 +80,11 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
+#enviar {
+  padding-left: 3.8%;
+  padding-right: 3.8%;
+}
+
 button:hover {
   background-color: rgba(223, 176, 58, 0.836);
   border: 2px solid rgb(207, 163, 73);
