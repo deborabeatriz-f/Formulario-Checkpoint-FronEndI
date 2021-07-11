@@ -1,9 +1,8 @@
 body {
-  background: radial-gradient(
-    circle,
-    rgba(235, 234, 225, 0.938) 40%,
-    rgba(196, 159, 91, 0.745) 100%
-  );
+  background-image: url(https://image.freepik.com/free-vector/hand-painted-watercolor-plants-background_79603-1497.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 main {
@@ -13,28 +12,24 @@ main {
 
 @keyframes mainAnimation {
   from {
-    transform: scaleX(20%);
+    transform: scaleX(30%);
   }
   to {
     transform: scaleX(100%);
   }
 }
 
-img {
-  border-radius: 2.5%;
-  width: 60%;
-  transition: all 0.2s ease-in-out;
-  animation: mainAnimation 1.7s;
-}
-
 .container {
-  padding: 0 35%;
+  padding: 0 30%;
 }
 
 #alma {
   font-family: "Dancing Script", cursive;
-  color: rgb(202, 152, 52);
-  font-size: 30px;
+  font-size: 34px;
+  background: -webkit-linear-gradient(top, rgb(48, 62, 196), rgb(18, 216, 216));
+  background: linear-gradient(top, gold, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 3% 25%;
   border-radius: 2.5%;
   padding: 1%;
@@ -42,13 +37,21 @@ img {
 
 .itemFormulario {
   margin-bottom: 1%;
-  border: 1px solid rgba(207, 207, 207, 0.932);
+  border: 1px solid rgba(80, 131, 127, 0.671);
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.479);
+  background-color: rgba(247, 241, 230, 0.671);
 }
 
-legend {
+legend,
+optgroup {
   text-align: center;
+  font-weight: bold;
+  color: rgb(18, 23, 131);
+}
+
+label,
+option {
+  color: rgb(15, 21, 138);
 }
 
 input[type="email"],
@@ -56,12 +59,8 @@ input[type="text"],
 input[type="number"] {
   padding: 1%;
   margin-bottom: 10px;
-  width: 83.3%;
-}
-
-textarea {
-  margin-bottom: 10px;
-  width: 84%;
+  width: 60%;
+  color: rgb(14, 19, 124);
 }
 
 fieldset:nth-child(1) label {
@@ -73,9 +72,9 @@ button {
   margin-left: 15px;
   padding: 2%;
   background-color: rgba(245, 243, 238, 0.705);
-  color: rgb(75, 55, 6);
+  color: rgb(14, 19, 124);
   font-weight: bold;
-  border: 1px solid rgb(197, 153, 64);
+  border: 1px solid rgba(80, 131, 127, 0.671);
   border-radius: 10%;
   transition: all 0.3s ease-in-out;
 }
@@ -86,7 +85,7 @@ button {
 }
 
 button:hover {
-  background-color: rgba(223, 176, 58, 0.836);
-  border: 2px solid rgb(207, 163, 73);
+  background-color: rgb(28, 89, 97);
+  border: 1px solid rgba(73, 139, 133, 0.671);
   color: rgb(245, 243, 238);
 }
