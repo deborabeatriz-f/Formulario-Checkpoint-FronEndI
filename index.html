@@ -20,75 +20,78 @@
   <body>
     <main>
       <div class="container">
-        <img src="./img/2.jpg" alt="plantas" />
         <p id="alma">Alma Botânica</p>
-        <form action="#" method="post">
-          <fieldset class="itemFormulario">
-            <legend>Dados Pessoais</legend>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" />
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" />
-            <label for="telefone">Telefone:</label>
-            <input type="number" name="telefone" id="telefone" />
-          </fieldset>
-          <fieldset class="itemFormulario">
-            <legend>Endereço</legend>
-            <textarea
-              name="endereco"
-              id="endereco"
-              cols="30"
-              rows="5"
-            ></textarea>
-          </fieldset>
-          <fieldset class="itemFormulario">
-            <legend>Plantas</legend>
-            <select name="plantas" id="plantas">
-              <option value="">Escolha sua planta</option>
-              <optgroup label="Meia Sombra">
-                <option value="jiboia">Jibóia</option>
-                <option value="maranta">Maranta</option>
-                <option value="filodendro">Filodendro</option>
-                <option value="peperomia">Peperômia</option>
-              </optgroup>
-              <optgroup label="Sol Pleno">
-                <option value="hera">Hera</option>
-                <option value="murta">Murta</option>
-                <option value="begonia">Begônia</option>
-                <option value="cactos">Cactos</option>
-              </optgroup>
-            </select>
-          </fieldset>
-          <fieldset class="itemFormulario">
-            <legend>Extras Opcionais</legend>
-            <input type="checkbox" name="cachepo" id="cachepo" />
-            <label for="cachepo">Cachepô</label>
-            <input type="checkbox" name="substrato" id="substrato" />
-            <label for="substrato">Substrato</label>
-            <input type="checkbox" name="adubo" id="adubo" />
-            <label for="adubo">Adubo</label>
-          </fieldset>
-          <fieldset class="itemFormulario">
-            <legend>Método de Pagamento</legend>
-            <input
-              type="radio"
-              name="pagamento"
-              id="credito"
-              value="credito"
-              checked
-            />
-            <label for="credito">Crédito</label>
-            <input
-              type="radio"
-              name="pagamento"
-              id="debito"
-              value="debito"
-              checked
-            />
-            <label for="debito">Débito</label>
-            <input type="radio" name="pagamento" id="pix" value="pix" checked />
-            <label for="pix">Pix</label>
-          </fieldset>
+        <form class="itemFormulario" action="#" method="post">
+          <legend>Dados Cadastrais</legend>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Nome Completo"
+          />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <input
+            type="number"
+            name="telefone"
+            id="telefone"
+            placeholder="Telefone"
+          />
+          <input
+            type="text"
+            name="endereco"
+            id="endereco"
+            placeholder="Endereço"
+          />
+          <legend>Plantas</legend>
+          <select name="plantas" id="plantas">
+            <option value="escolha">Escolha sua planta</option>
+            <optgroup label="Meia Sombra">
+              <option value="jiboia">Jibóia</option>
+              <option value="maranta">Maranta</option>
+              <option value="filodendro">Filodendro</option>
+              <option value="peperomia">Peperômia</option>
+            </optgroup>
+            <optgroup label="Sol Pleno">
+              <option value="hera">Hera</option>
+              <option value="murta">Murta</option>
+              <option value="begonia">Begônia</option>
+              <option value="cactos">Cactos</option>
+            </optgroup>
+          </select>
+          <legend>Extras Opcionais</legend>
+          <input type="checkbox" name="cachepo" id="cachepo" />
+          <label for="cachepo">Cachepô</label>
+          <input type="checkbox" name="substrato" id="substrato" />
+          <label for="substrato">Substrato</label>
+          <input type="checkbox" name="adubo" id="adubo" />
+          <label for="adubo">Adubo</label>
+          <legend>Método de Pagamento</legend>
+          <input
+            type="radio"
+            name="pagamento"
+            id="credito"
+            value="credito"
+            checked
+          />
+          <label for="credito">Crédito</label>
+          <input
+            type="radio"
+            name="pagamento"
+            id="debito"
+            value="debito"
+            checked
+          />
+          <label for="debito">Débito</label>
+          <input type="radio" name="pagamento" id="pix" value="pix" checked />
+          <label for="pix">Pix</label>
+          <input
+            type="radio"
+            name="pagamento"
+            id="boleto"
+            value="boleto"
+            checked
+          />
+          <label for="boleto">Boleto</label>
         </form>
         <button type="reset">Cancelar</button>
         <button type="submit" id="enviar">Enviar</button>
