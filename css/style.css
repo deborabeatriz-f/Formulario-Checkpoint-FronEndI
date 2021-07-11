@@ -7,32 +7,43 @@ body {
 
 main {
   text-align: center;
-  animation: mainAnimation 1s;
+  animation: mainAnimation 2.5s;
 }
 
 @keyframes mainAnimation {
   from {
-    transform: scaleX(30%);
+    transform: translateY(-120%);
   }
   to {
-    transform: scaleX(100%);
+    transform: translateY(0%);
   }
 }
 
 .container {
-  padding: 0 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 38%;
 }
 
 #alma {
   font-family: "Dancing Script", cursive;
-  font-size: 34px;
-  background: -webkit-linear-gradient(top, rgb(48, 62, 196), rgb(18, 216, 216));
+  font-size: 28px;
+  background: -webkit-linear-gradient(bottom, #04415c, #0b78a7, #3bccd6);
   background: linear-gradient(top, gold, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 3% 25%;
   border-radius: 2.5%;
   padding: 1%;
+   transition: all 0.4s ease-in-out;
+}
+
+#alma:hover{
+   background: -webkit-linear-gradient(top, rgb(48, 51, 196), rgb(18, 216, 216));
+  background: linear-gradient(top, gold, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .itemFormulario {
@@ -47,11 +58,13 @@ optgroup {
   text-align: center;
   font-weight: bold;
   color: rgb(18, 23, 131);
+  line-height: 25px;
 }
 
 label,
 option {
   color: rgb(15, 21, 138);
+  line-height: 4px;
 }
 
 input[type="email"],
@@ -61,10 +74,11 @@ input[type="number"] {
   margin-bottom: 10px;
   width: 60%;
   color: rgb(14, 19, 124);
+  line-height: 4px;
 }
 
-fieldset:nth-child(1) label {
-  display: block;
+#botoes {
+  flex-direction: row;
 }
 
 button {
@@ -85,7 +99,18 @@ button {
 }
 
 button:hover {
-  background-color: rgb(28, 89, 97);
-  border: 1px solid rgba(73, 139, 133, 0.671);
+  border: none;
   color: rgb(245, 243, 238);
+  background-image: linear-gradient(
+    to right,
+    #04415c,
+    #0b78a7,
+    #25aae1,
+    #3bccd6
+  );
+  box-shadow: 0 8px 8px 0 rgba(35, 56, 55, 0.75));
+  background-position: 100% 0;
+  moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
 }
